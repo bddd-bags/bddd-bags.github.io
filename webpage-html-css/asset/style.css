@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/asset/fonts/Quicksand-VariableFont_wght.ttf');
+}
+
+* {
+    font-family: 'Quicksand';
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background: #036564;
+}
+
+#header h2 {
+    display: block;
+    text-align: start;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 37px;
+    height: 30px;
+}
+
+.menu-toggle span {
+    display: none;
+    background: white;
+    height: 4px;
+    border-radius: 10px;
+}
+
+.jumbotron ul{
+    display: flex;
+    list-style: none;
+}
+
+.jumbotron ul a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.jumbotron a:hover {
+    font-weight: bold;
+}
+
+.jumbotron ul input {
+    width: 130px;
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+}
+
+.jumbotron ul li button {
+    width: 65px;
+    padding: 5px;
+    border:none;
+    border-radius: 11px;
+    margin-left: 5px;
+}
+
+button:hover {
+    background: #d1cece;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to top, #b7977b 20%, #036564 80%);
+}
+
+.home .top1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 130px;
+    color: white;
+}
+
+.top1 article {
+    padding-left: 120px;
+}
+
+.top1 article h1 {
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+
+.top1 article p {
+    margin: 20px auto;
+}
+
+.top1 article button {
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+#wave {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 10px;
+
+}
+
+.content h2 {
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8em;
+}
+
+.card1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.card2:last-child {
+    border-bottom: none;
+}
+
+.tengah article p {
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.tengah article figure {
+    padding: 20px;
+}
+
+.tengah article figure img:hover {
+        box-shadow: 0 1px 8px 1px black;
+        cursor: pointer;
+}
+
+.tengah article figure figcaption {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.sidebar {
+    background-image: linear-gradient(to bottom, #b7977b 20%, #036564 80%);
+    color: white;
+}
+
+.bot {
+    width: 100%;
+    max-width: 900px;
+    margin: 15px auto 0;
+    text-align: center;
+}
+
+.bot h2 {
+    font-size: 1.8em;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+
+.bot img {
+    border-radius: 10px;
+}
+
+.bot img:hover {
+    box-shadow: 0 2px 10px 0 black;
+    cursor: pointer ;
+}
+
+.biodata {
+    padding: 20px 0;
+}
+
+.biodata table {
+    margin: 0 auto;
+}
+
+.biodata table th, .biodata table td {
+    text-align: start;
+    padding: 0 10px;
+}
+
+.footer {
+    background: #036564;
+    color: white;
+    padding: 40px;
+    border-top: 1px solid #005755;
+    text-align: center;
+    font-size: 17px;
+}
+
+.footer p cite a {
+    color: white;
+    font-weight: 400;
+}
+
+/* tablet */
+@media screen and (max-width: 968px) {
+    .jumbotron ul a {
+        width: 50%;
+    }
+    
+    .home .top1 {
+        flex-wrap: wrap;
+        padding: 40px 40px;
+        width: 100%;
+
+    }
+
+    .home .top1 article {
+        padding: 20px;
+        text-align: justify;
+    }
+
+}
+
+/* smartphone */
+@media screen and (max-width: 665px) {
+    .menu-toggle {
+        display: flex;
+        cursor: pointer;
+    }
+    
+    * {
+        overflow-x: hidden;
+    }
+
+    .jumbotron ul {
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 75px;
+        background: #036564;
+        height: 50vh;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        opacity: 0;
+        transition: all 0.8s;
+        border: 1px solid #035c5a;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .jumbotron ul.opacity {
+        opacity: 1;
+    }
+
+    .jumbotron ul a {
+        text-align: center;
+        padding: 0;
+    }
+
+    .jumbotron ul input,
+    .jumbotron ul button {
+        margin: 0;
+    }
+
+    .menu-toggle span {
+        display: block;
+    }
+
+    .tengah .card1, .card2 {
+        flex-direction: column;
+    }
+
+    .top1 article h1 {
+        text-align: center;
+    }
+
+    .top1 article p {
+        margin: 10px 0 20px;
+    }
+
+    .top1 article button {
+        max-width: 100%;
+    }
+}
