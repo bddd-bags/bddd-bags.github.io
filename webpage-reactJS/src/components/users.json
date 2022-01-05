@@ -1,0 +1,16 @@
+[
+  {
+    "nama": "Aditya Bagaskara",
+    "username": "admin",
+    "password": "admin",
+    "level": "GRAND MASTER",
+    "points": 10000
+  },
+  {
+    "nama": "Kaesang Pangarep",
+    "username": "sang",
+    "password": "sang",
+    "level": "NOVICE",
+    "points": 10
+  }
+]
